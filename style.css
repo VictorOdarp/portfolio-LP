@@ -16,19 +16,19 @@ body{
 .headline__conteudo{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 4%;
 }
 
 .headline__conteudo img {
-    width: 35.5%;
+    width: 38%;
     border-radius: 10px;
 }
 
 .headline__texto{
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     width: 40%;
-    gap: 5%;
+    gap: 20px;
 }
 
 .headline__texto h1{
@@ -41,6 +41,11 @@ body{
 
 .headline__texto button{
     color: black;
+    padding: 2%;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
 }
 
 .servicos{
@@ -72,8 +77,87 @@ body{
     background: linear-gradient(50deg,#FF2C55,#35315C);
     padding: 1.5%;
     border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
 }
 
 .container__servicos__conteudo i{
     font-size: 3rem;
+}
+
+.beneficios{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.beneficios img{
+    width: 46%;
+    border-radius: 10px;
+}
+
+.beneficios__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.beneficios__conteudo h1 {
+    font-size: 2.5rem;
+}
+
+.beneficios__conteudo__button button{
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.titulo__planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.titulo__planos h2{
+    font-size: 2.5rem;
+}
+
+.titulo__planos button {
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.planos{
+    padding: 2% 15%;
+}
+
+.planos__conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.planos__conteudo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(50deg,#FF2C55,#35315C);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.segundo {
+    height: 350px;
 }

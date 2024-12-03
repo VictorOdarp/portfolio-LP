@@ -85,7 +85,7 @@ body{
 }
 
 .beneficios{
-    padding: 5% 15%;
+    padding: 2% 15%;
     display: flex;
     justify-content: center;
     gap: 4%;
@@ -188,8 +188,52 @@ body{
     height: 420px;
 }
 
+.depoimentos{
+    padding: 2% 15%;
+}
+
+.depoimentos__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.depoimentos__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.depoimentos__conteudo__titulo h1{
+    font-size: 3rem;
+}
+
+.container__depoimentos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__depoimentos__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 28%;
+}
+
+.container__depoimentos__conteudo__foto{
+    display: flex;
+}
+.depoimentos__conteudo__foto__perfil{
+    width: 100px;
+}
+
+.depoimentos__conteudo__foto__empresa{
+    width: 100px;
+}
+
 .sobrenos{
-    padding: 3% 10%;
+    padding: 2% 10%;
 }
 
 .sobrenos__conteudo{
@@ -203,10 +247,11 @@ body{
     gap: 10px;
 }
 
-.sobrenos__imagem{
-    width: 500px;
-    height: 400px;
-    border-radius: 10px;
+.sobrenos__container__imagem img {
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .sobrenos__container__texto{

@@ -295,7 +295,8 @@ body{
 
 .barra__contato{
     width: 100%;
-    background-color: black;
+    background-color: #000030;
+    box-shadow: 1px 2px 10px white;
     padding: 0.5%;
 }
 
@@ -312,4 +313,27 @@ body{
 
 .contato__icone__envelope{
     font-size: 1.5rem;
+}
+
+.rodape{
+    padding: 1% 15%;
+    background: linear-gradient(#000030, #000052);
+}
+
+.conteudo__rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo__rodape__logo img{
+    width: 150px;
+}
+
+.conteudo__rodape__nav{
+    list-style-type: none;
+}
+
+.conteudo__rodape__nav li a{
+    text-decoration: none;
 }

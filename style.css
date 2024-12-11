@@ -14,6 +14,19 @@ body{
     font-family: Archivo Narrow;
 }
 
+.cabecalho{
+    padding: 0% 15%;
+}
+
+.cabecalho__conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__conteudo img {
+    width: 10%;
+}
+
 .headline{
     padding: 2% 15%;
 }
@@ -293,31 +306,9 @@ body{
     cursor: pointer;
 }
 
-.barra__contato{
-    width: 100%;
-    background-color: #000030;
-    box-shadow: 1px 2px 10px white;
-    padding: 0.5%;
-}
-
-.barra__contato__conteudo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.contato__icone__telefone{
-    font-size: 1.5rem;
-}
-
-.contato__icone__envelope{
-    font-size: 1.5rem;
-}
-
 .rodape{
-    padding: 1% 15%;
-    background: linear-gradient(#000030, #000052);
+    padding: 0.5% 15%;
+    backdrop-filter: blur(5px);
 }
 
 .conteudo__rodape{
@@ -336,4 +327,77 @@ body{
 
 .conteudo__rodape__nav li a{
     text-decoration: none;
+}
+
+.perguntas{
+    padding: 2% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 5px solid white;
+}
+
+.titulo__perguntas {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.conteudo__perguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__perguntas{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    border-bottom: 1px solid white;
+}
+
+.container__perguntas h2{
+    font-size: 2rem;
+}
+
+.conteudo__perguntas__pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.conteudo__perguntas__resposta{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.conteudo__perguntas__resposta p{
+    font-size: 1.2rem;
+}
+
+.container__perguntas.active .conteudo__perguntas__resposta{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.container__perguntas.active i {
+    transform: rotate(180deg);
+}
+
+i{
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

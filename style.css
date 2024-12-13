@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body{
 }
 
 .cabecalho{
-    padding: 0% 15%;
+    padding: 2% 15%;
 }
 
 .cabecalho__conteudo{
@@ -67,7 +68,7 @@ body{
 }
 
 .servicos{
-    padding: 2% 10%;
+    padding: 2% 8%;
 }
 
 .servicos__conteudo{
@@ -85,21 +86,27 @@ body{
 
 .container__servicos{
     display: flex;
-    gap: 2%;
+    gap: 1.5%;
 }
 
 .container__servicos__conteudo{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     gap: 10px;
     background: linear-gradient(50deg,#00002E,#00003E);
-    padding: 20px 15px;
+    padding: 10px 20px;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 1px 2px 10px white;
 }
 
 .container__servicos__conteudo i{
     font-size: 3rem;
+}
+
+.container__servicos__conteudo a i{
+    font-size: 1rem;
 }
 
 .beneficios{

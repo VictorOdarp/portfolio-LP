@@ -15,6 +15,10 @@ body{
     font-family: Archivo Narrow;
 }
 
+p{
+    font-size: 1.1rem;
+}
+
 .cabecalho{
     padding: 2% 15%;
 }
@@ -122,7 +126,7 @@ body{
 }
 
 .beneficios img{
-    width: 40%;
+    width: 43%;
     border-radius: 10px;
 }
 
@@ -170,7 +174,7 @@ body{
 }
 
 .planos{
-    padding: 2% 15%;
+    padding: 0% 15%;
 }
 
 .planos__conteudo{
@@ -228,8 +232,15 @@ body{
     height: 500px;
 }
 
+.segundo button{
+    color: white;
+    background-color: rgb(75, 167, 75);
+    padding: 10px 40px;
+    border: 1px solid white;
+}
+
 .depoimentos{
-    padding: 2% 10%;
+    padding: 3% 10%;
 }
 
 .depoimentos__conteudo{
@@ -268,17 +279,22 @@ body{
 
 .container__depoimentos__conteudo__foto{
     display: flex;
+    align-items: center;
 }
 .depoimentos__conteudo__foto__perfil{
     width: 100px;
 }
 
 .depoimentos__conteudo__foto__empresa{
-    width: 100px;
+    width: 75px;
 }
 
 .sobrenos{
-    padding: 2% 10%;
+    padding: 0% 15%;
+    background: linear-gradient(#00002E,#00003E,#00002E);
+    border: 2px solid white;
+    border-right: none;
+    border-left: none;
 }
 
 .sobrenos__conteudo{
@@ -288,22 +304,18 @@ body{
     gap: 20px;
 }
 
-.sobrenos__container__imagem{
-    display: flex;
-    gap: 10px;
-}
-
 .sobrenos__container__imagem img {
-    width: 300px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 15px;
+    width: 90%;
 }
 
 .sobrenos__container__texto{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    background: linear-gradient(#00002E,#00003E);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px white;
+    padding: 2%;
+    width: 50%;
     gap: 15px;
 }
 
@@ -318,17 +330,18 @@ body{
 }
 
 .button__sobrenos button{
-    color: black;
+    color: white;
+    background-color: rgb(75, 167, 75);
     padding: 10px;
     width: 50%;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px white;
     cursor: pointer;
 }
 
 .rodape{
-    padding: 0.5% 15%;
+    padding: 2% 15%;
     backdrop-filter: blur(5px);
 }
 
@@ -339,7 +352,7 @@ body{
 }
 
 .conteudo__rodape__logo img{
-    width: 150px;
+    width: 200px;
 }
 
 .conteudo__rodape__nav{
@@ -351,7 +364,7 @@ body{
 }
 
 .perguntas{
-    padding: 2% 15%;
+    padding: 3% 15%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -394,6 +407,21 @@ body{
     transition: max-height 1s ease;
 }
 
+.button__perguntas{
+    padding-top: 3%;
+}
+
+.button__perguntas button{
+    color: white;
+    background-color: rgb(75, 167, 75);
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px white;
+    cursor: pointer;
+}
+
 .conteudo__perguntas__resposta p{
     font-size: 1.2rem;
 }
@@ -412,6 +440,18 @@ i{
     cursor: pointer;
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
+
 @keyframes fade{
     from{
         opacity: 0;
@@ -422,3 +462,4 @@ i{
         transform: translateY(0px);
     }
 }
+

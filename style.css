@@ -230,6 +230,7 @@ p{
 
 .segundo {
     height: 500px;
+    box-shadow: 1px 1px 30px rgb(75, 167, 75);
 }
 
 .segundo button{
@@ -464,6 +465,14 @@ i{
 }
 
 @media (max-width: 420px){
+    
+    body{
+        background-size: cover;
+    }
+
+    .cabecalho__conteudo img {
+        width: 40%;
+    }
 
     .headline{
         padding: 2% 7.5%;
@@ -498,7 +507,7 @@ i{
     }
 
     .servicos__conteudo{
-        gap: 25px;
+        gap: 0px;
     }
 
     .servicos__conteudo__headline{
@@ -508,20 +517,27 @@ i{
     }
 
     .container__servicos{
+        padding: 10% 0%;
         flex-direction: column;
         gap: 25px;
     }
 
     .beneficios{
+        padding: 0% 7.5%;
         flex-direction: column;
     }
 
     .beneficios__conteudo{
+        padding-top: 5%;
         width: 100%;
     }
 
+    .beneficios__conteudo h1{
+        font-size: 2rem;
+    }
+
     .beneficios img {
-        width: 10%;
+        width: 100%;
     }
 
     .planos__conteudo{
@@ -534,5 +550,112 @@ i{
 
     .container__depoimentos__conteudo{
         width: 100%;
+    }
+
+    .titulo__planos{
+        padding: 5% 7.5%;
+    }
+    
+    .titulo__planos__paragrafo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo__planos h2{
+        font-size: 2rem;
+    }
+
+    .titulo__planos p{
+        text-align: start;
+    }
+
+    .planos__conteudo{
+        gap: 25px;
+    }
+
+    .depoimentos{
+        padding: 5% 7.5%;
+    }
+
+    .depoimentos__conteudo{
+        gap: 15px;
+    }
+
+    .container__depoimentos{
+        padding: 2% 0%;
+    }
+
+    .depoimentos__conteudo__titulo{
+        text-align: center;
+    }
+
+    .depoimentos__conteudo__titulo h1{
+        font-size: 2rem;
+    }
+
+    .sobrenos{
+        padding: 0% 7.5%;
+        padding-top: 5%;
+    }
+    .sobrenos__conteudo{
+        flex-direction: column-reverse;
+    }
+
+    .sobrenos__container__imagem{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobrenos__container__imagem img{
+        width: 70%;
+    }
+
+    .sobrenos__container__texto{
+        padding: 3%;
+        width: 100%;
+    }
+
+    .button__sobrenos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button__sobrenos button {
+        width: 70%;
+    }
+
+    .perguntas{
+        padding: 5% 7.5%;
+    }
+
+    .perguntas h2{
+        font-size: 2rem;
+    }
+
+    .container__perguntas{
+        width: 100%;
+    }
+
+    .conteudo__perguntas__pergunta h2{
+        font-size: 1.7rem;
+    }
+
+    .rodape{
+        padding: 5% 5%;
+    }
+
+    .conteudo__rodape{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .conteudo__rodape__nav{
+        display: flex;
+        gap: 5px;
+    }
+
+    .conteudo__rodape__logo img {
+        width: 100px;
     }
 }
